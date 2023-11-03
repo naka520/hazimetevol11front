@@ -14,6 +14,7 @@ const TopPage: React.FC = () => {
             className="bg-blue-300 hover:bg-gray-400 text-white p-3 rounded-md w-full mb-2"
             onClick={() => {
               // ログインページへの遷移を記述
+              navigate("/signin");
             }}
           >
             ログイン

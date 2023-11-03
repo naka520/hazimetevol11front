@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TopPage from "./component/TopPage";
 import SignUp from "./component/SignUp";
+import SignIn from "./component/SignIn";
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<TopPage />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
         {/* 他のページのルーティングもこちらに追加 */}
       </Routes>
     </Router>
