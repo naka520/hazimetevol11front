@@ -18,7 +18,10 @@ const HomePage: React.FC = () => {
           >
             収入登録
           </button>
-          <button className="bg-blue-300 hover:bg-gray-400 text-white rounded-md px-6 py-3 shadow-md w-3/4">
+          <button
+            className="bg-blue-300 hover:bg-gray-400 text-white rounded-md px-6 py-3 shadow-md w-3/4"
+            onClick={() => navigate("/record")}
+          >
             収入計算結果
           </button>
         </div>

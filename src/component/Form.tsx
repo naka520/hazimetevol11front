@@ -29,7 +29,7 @@ const IncomeRegistration: React.FC = () => {
               <input
                 key={idx}
                 type="text"
-                className="flex-1 p-2 border rounded-md text-center mx-1"
+                className="flex-1 p-2 border rounded-md text-center mx-1  bg-gray-100"
                 placeholder="..."
               />
             ))}
@@ -44,12 +44,12 @@ const IncomeRegistration: React.FC = () => {
 
         <div className="mt-6 text-center">
           <button
-            className="bg-blue-300 text-blue-700 rounded-md px-4 py-2 shadow-md mr-4"
+            className="bg-blue-300 hover:bg-gray-300 text-white rounded-md px-4 py-2 shadow-md mr-4"
             onClick={addEntry}
           >
             フォームを追加
           </button>
-          <button className="bg-blue-500 text-white rounded-md px-4 py-2 shadow-md">
+          <button className="bg-blue-500 hover:bg-gray-300 text-white rounded-md px-4 py-2 shadow-md">
             登録
           </button>
         </div>
