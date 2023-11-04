@@ -6,6 +6,7 @@ import TopPage from "./component/TopPage";
 import SignUp from "./component/SignUp";
 import SignIn from "./component/SignIn";
 import Home from "./component/Home";
+import Form from "./component/Form";
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/form" element={<Form />} />
         {/* 他のページのルーティングもこちらに追加 */}
       </Routes>
     </Router>
