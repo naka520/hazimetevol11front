@@ -61,6 +61,9 @@ const IncomeRegistration: React.FC = () => {
     <div className="min-h-screen bg-yellow-50 flex items-center justify-center">
       <div className="bg-white p-8 rounded-md shadow-md w-5/6 md:w-3/4 lg:w-2/3">
         {/* ... */}
+        <div className="bg-blue-400 text-white rounded-full p-3 mb-6 w-3/4 mx-auto text-center shadow-md">
+          今月稼ぐ予定の収入を教えてください！
+        </div>
         <div className="mb-8 flex justify-between items-center">
           {["カテゴリ", "時間", "時給", "日にち"].map((header, index) => (
             <span key={index} className="flex-1 text-center">
