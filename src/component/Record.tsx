@@ -3,8 +3,8 @@ import React from "react";
 const RecordDisplay: React.FC = () => {
   const mockData = [
     { date: "2023-01-01", income: 90000 },
-    { date: "2023-01-02", income: 110000 },
-    { date: "2023-01-03", income: 87000 },
+    { date: "2023-02-02", income: 110000 },
+    { date: "2023-03-03", income: 87000 },
     // 以下、さらにデータを追加できます
   ];
 

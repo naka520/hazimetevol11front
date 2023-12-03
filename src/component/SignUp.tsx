@@ -6,7 +6,7 @@ const SignUp: React.FC = () => {
   const [username, setUsername] = useState<string>("");
   const handleSignUp = async () => {
     try {
-      const response = await fetch("http://localhost:8000/users/", {
+      const response = await fetch("http://localhost:80/users/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

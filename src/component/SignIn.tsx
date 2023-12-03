@@ -9,7 +9,7 @@ const SignIn: React.FC = () => {
   const [password, setPassword] = useState<string>("");
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:8000/login", {
+      const response = await axios.post("http://localhost:80/login", {
         username,
         email,
         password,
