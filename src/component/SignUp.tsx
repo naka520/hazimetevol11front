@@ -6,17 +6,20 @@ const SignUp: React.FC = () => {
   const [username, setUsername] = useState<string>("");
   const handleSignUp = async () => {
     try {
-      const response = await fetch("http://localhost:80/users/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: email,
-          password: password,
-          username: username,
-        }),
-      });
+      const response = await fetch(
+        "https://app-alteradnaka.azurewebsites.net/users/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: email,
+            password: password,
+            username: username,
+          }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("サーバーエラー");

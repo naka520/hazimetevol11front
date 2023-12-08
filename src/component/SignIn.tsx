@@ -9,11 +9,14 @@ const SignIn: React.FC = () => {
   const [password, setPassword] = useState<string>("");
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:80/login", {
-        username,
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://app-alteradnaka.azurewebsites.net/login",
+        {
+          username,
+          email,
+          password,
+        }
+      );
 
       // ここでトークンを保存するなどの処理を行います
       // 例: localStorage.setItem('token', response.data.token);
